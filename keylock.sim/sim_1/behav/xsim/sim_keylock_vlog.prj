@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../keylock.srcs/sources_1/new/keylock.v" \
+"../../../../keylock.srcs/sim_1/new/sim_keylock.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

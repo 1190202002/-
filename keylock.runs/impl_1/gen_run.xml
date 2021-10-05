@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-3" LaunchTime="1607939833">
+  <File Type="ROUTE-PWR" Name="keylock_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="keylock.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="keylock_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="keylock_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="keylock.msk"/>
+  <File Type="ROUTE-CLK" Name="keylock_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="keylock.vdi"/>
+  <File Type="BG-BIT" Name="keylock.bit"/>
+  <File Type="BG-DRC" Name="keylock.drc"/>
+  <File Type="BG-BGN" Name="keylock.bgn"/>
+  <File Type="BG-BIN" Name="keylock.bin"/>
+  <File Type="BITSTR-RBT" Name="keylock.rbt"/>
+  <File Type="BITSTR-NKY" Name="keylock.nky"/>
+  <File Type="BITSTR-BMM" Name="keylock_bd.bmm"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="keylock_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="keylock.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="keylock.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="keylock.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="keylock_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="keylock.hwdef"/>
+  <File Type="PLACE-IO" Name="keylock_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="keylock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="keylock_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="keylock_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="keylock_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="keylock_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="keylock_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="keylock_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="keylock_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="keylock_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="keylock_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="keylock_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="keylock_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="keylock_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="keylock_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="keylock_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="keylock_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="keylock_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="keylock_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="keylock_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="keylock_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="keylock_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="keylock_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="keylock_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="keylock_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="keylock_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="keylock_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="keylock_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="keylock_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="keylock.pdi"/>
+  <File Type="RCFI_FILE" Name="keylock.rcfi"/>
+  <File Type="CFI_FILE" Name="keylock.cfi"/>
+  <File Type="RNPI_FILE" Name="keylock.rnpi"/>
+  <File Type="NPI_FILE" Name="keylock.npi"/>
+  <File Type="RBD_FILE" Name="keylock.rbd"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/keylock.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="keylock"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/con_keylock.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>
